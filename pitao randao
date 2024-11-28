@@ -1,0 +1,15 @@
+import random
+numero_sorteado = random.randint(1, 100)
+tentativas = 0 
+
+while tentativas < 10:
+    chute = int(input("digite seu chute"))
+    if chute > numero_sorteado:
+        print ("chute maior que numero sorteado")
+    tentativas += 1
+    if chute < numero_sorteado:
+        print ("chute menor que numero sorteado")
+    else :
+        print ("vc acertou")
+if tentativas == 10:
+    print ("acabou seus chutes")
